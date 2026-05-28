@@ -1,0 +1,263 @@
+/* =========================================================
+   Neogrid Neo UI Kit — Colors & Type
+   Source: Neo UI Kit v2.0.6 (Light) Figma file
+   Built on Ant Design 4.x foundations, customized by Neogrid
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo:wght@400;700&family=JetBrains+Mono:wght@400&display=swap");
+
+:root {
+  /* -----------------------------------------------------
+     COLORS — Neutrals (Ant Design gray scale)
+     ----------------------------------------------------- */
+  --neo-white:       #ffffff;
+  --neo-gray-1:      #ffffff;
+  --neo-gray-2:      #fafafa;
+  --neo-gray-3:      #f5f5f5;
+  --neo-gray-4:      #f0f0f0;
+  --neo-gray-5:      #e8e8e8;
+  --neo-gray-6:      #d9d9d9;
+  --neo-gray-7:      #bfbfbf;
+  --neo-gray-8:      #8c8c8c;
+  --neo-gray-9:      #595959;
+  --neo-gray-10:     #262626;
+  --neo-black:       #000000;
+
+  /* -----------------------------------------------------
+     COLORS — Brand "Neogrid Blue"
+     The signature deep navy used for primary actions,
+     links, focused borders, sider backgrounds.
+     ----------------------------------------------------- */
+  --neo-blue-1:      #e1eaf0;  /* tint backgrounds          */
+  --neo-blue-2:      #b8cfdc;
+  --neo-blue-3:      #8db4c5;
+  --neo-blue-4:      #145a7d;
+  --neo-blue-5:      #0070a3;  /* hover                     */
+  --neo-blue-6:      #00517d;  /* active                    */
+  --neo-blue-7:      #00466f;  /* PRIMARY (default)         */
+  --neo-blue-8:      #002c4a;
+  --neo-blue-9:      #00263c;
+  --neo-blue-10:     #001a2b;
+
+  --neo-primary:           var(--neo-blue-7);
+  --neo-primary-hover:     var(--neo-blue-5);
+  --neo-primary-active:    var(--neo-blue-6);
+  --neo-primary-bg:        var(--neo-blue-1);
+
+  /* -----------------------------------------------------
+     COLORS — Semantic
+     ----------------------------------------------------- */
+  --neo-info:        #1890ff;
+  --neo-info-bg:     #e6f7ff;
+  --neo-info-border: #91d5ff;
+
+  --neo-success:        #14c86e;   /* rgb(20,200,110)       */
+  --neo-success-bg:     #f6ffed;
+  --neo-success-border: #b7eb8f;
+
+  --neo-warning:        #f8ab2b;   /* rgb(248,171,43)       */
+  --neo-warning-bg:     #fffbe6;
+  --neo-warning-border: #ffe58f;
+
+  --neo-danger:         #f0000a;   /* rgb(240,0,10)         */
+  --neo-danger-bg:      #fff1f0;
+  --neo-danger-border:  #ffa39e;
+
+  /* -----------------------------------------------------
+     COLORS — Accent (used for the kit's own annotations,
+     dashed callouts, and a couple of charts)
+     ----------------------------------------------------- */
+  --neo-purple:      #7b61ff;     /* dashed annotation border */
+  --neo-cyan:        #7aebff;
+  --neo-cyan-bg:     #e6fdff;
+
+  /* -----------------------------------------------------
+     SEMANTIC TEXT TOKENS
+     ----------------------------------------------------- */
+  --neo-fg-1:        var(--neo-gray-10);   /* primary       */
+  --neo-fg-2:        var(--neo-gray-9);    /* secondary     */
+  --neo-fg-3:        var(--neo-gray-8);    /* tertiary      */
+  --neo-fg-4:        var(--neo-gray-7);    /* disabled      */
+  --neo-fg-on-dark:  var(--neo-white);
+  --neo-fg-link:     var(--neo-primary);
+
+  /* -----------------------------------------------------
+     SEMANTIC BACKGROUND TOKENS
+     ----------------------------------------------------- */
+  --neo-bg-app:      var(--neo-gray-3);    /* page wash     */
+  --neo-bg-elev-0:   var(--neo-white);     /* card surface  */
+  --neo-bg-elev-1:   var(--neo-gray-2);    /* subtle row    */
+  --neo-bg-muted:    var(--neo-gray-3);    /* table head    */
+  --neo-bg-disabled: var(--neo-gray-3);
+
+  /* -----------------------------------------------------
+     BORDERS
+     ----------------------------------------------------- */
+  --neo-border:           var(--neo-gray-6);   /* default   */
+  --neo-border-subtle:    var(--neo-gray-4);   /* dividers  */
+  --neo-border-strong:    var(--neo-gray-8);
+  --neo-border-focus:     var(--neo-primary);
+
+  --neo-radius-xs: 2px;
+  --neo-radius-sm: 4px;       /* default for inputs/buttons/cards */
+  --neo-radius-md: 6px;
+  --neo-radius-lg: 8px;
+  --neo-radius-pill: 999px;
+
+  --neo-border-width: 1px;
+
+  /* -----------------------------------------------------
+     SPACING (4px base)
+     ----------------------------------------------------- */
+  --neo-space-0:  0;
+  --neo-space-1:  4px;
+  --neo-space-2:  8px;
+  --neo-space-3:  12px;
+  --neo-space-4:  16px;
+  --neo-space-5:  20px;
+  --neo-space-6:  24px;
+  --neo-space-7:  32px;
+  --neo-space-8:  40px;
+  --neo-space-9:  48px;
+  --neo-space-10: 64px;
+  --neo-space-11: 80px;
+
+  /* -----------------------------------------------------
+     SHADOWS (Ant Design elevation scale)
+     ----------------------------------------------------- */
+  --neo-shadow-1: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --neo-shadow-2: 0 2px 8px 0 rgba(0,0,0,0.08);
+  --neo-shadow-3: 0 4px 12px 0 rgba(0,0,0,0.12);
+  --neo-shadow-4: 0 6px 16px 0 rgba(0,0,0,0.15);
+  --neo-shadow-fab:0 4px 4px 0 rgba(0,0,0,0.25); /* FAB / floating action */
+  --neo-shadow-focus-blue: 0 0 0 2px rgba(0,70,111,0.15);
+
+  /* -----------------------------------------------------
+     CONTROL HEIGHTS (default = 32 / large = 40 / small = 24)
+     ----------------------------------------------------- */
+  --neo-control-h-sm: 24px;
+  --neo-control-h:    32px;
+  --neo-control-h-lg: 40px;
+
+  /* -----------------------------------------------------
+     BREAKPOINTS
+     ----------------------------------------------------- */
+  --neo-bp-xs: 480px;
+  --neo-bp-sm: 576px;
+  --neo-bp-md: 768px;
+  --neo-bp-lg: 992px;
+  --neo-bp-xl: 1200px;
+  --neo-bp-xxl:1600px;
+
+  /* -----------------------------------------------------
+     TYPOGRAPHY — Families
+     SF Pro Display is the in-product family. Inter is the
+     closest free Google match for web rendering.
+     Archivo is used for marketing/cover-page display.
+     ----------------------------------------------------- */
+  --neo-font-sans: "Inter", "SF Pro Display", -apple-system,
+                   BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+  --neo-font-display: "Archivo", "Inter", system-ui, sans-serif;
+  --neo-font-mono: "JetBrains Mono", "Inconsolata",
+                   ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* -----------------------------------------------------
+     TYPOGRAPHY — Type scale (px sizes, exact match to kit)
+     ----------------------------------------------------- */
+  --neo-fs-xs:   12px;
+  --neo-fs-sm:   13px;
+  --neo-fs-base: 14px;   /* default body */
+  --neo-fs-md:   16px;
+  --neo-fs-lg:   20px;
+  --neo-fs-xl:   24px;
+  --neo-fs-2xl:  30px;
+  --neo-fs-3xl:  38px;
+  --neo-fs-4xl:  46px;
+
+  --neo-lh-tight: 1.2;
+  --neo-lh-snug:  1.4;
+  --neo-lh-base:  1.57;   /* 22/14 */
+  --neo-lh-loose: 1.7;
+
+  --neo-fw-regular: 400;
+  --neo-fw-medium:  500;
+  --neo-fw-semibold:600;
+  --neo-fw-bold:    700;
+}
+
+/* -----------------------------------------------------
+   ELEMENT DEFAULTS (use these directly or via classes)
+   ----------------------------------------------------- */
+html, body {
+  font-family: var(--neo-font-sans);
+  font-size: var(--neo-fs-base);
+  line-height: var(--neo-lh-base);
+  color: var(--neo-fg-1);
+  background: var(--neo-bg-app);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .neo-h1 {
+  font-family: var(--neo-font-sans);
+  font-weight: var(--neo-fw-semibold);
+  font-size: var(--neo-fs-3xl);   /* 38 */
+  line-height: 46px;
+  color: var(--neo-fg-1);
+  margin: 0;
+}
+h2, .neo-h2 {
+  font-weight: var(--neo-fw-semibold);
+  font-size: var(--neo-fs-2xl);   /* 30 */
+  line-height: 38px;
+  color: var(--neo-fg-1);
+  margin: 0;
+}
+h3, .neo-h3 {
+  font-weight: var(--neo-fw-semibold);
+  font-size: var(--neo-fs-xl);    /* 24 */
+  line-height: 32px;
+  margin: 0;
+}
+h4, .neo-h4 {
+  font-weight: var(--neo-fw-semibold);
+  font-size: var(--neo-fs-lg);    /* 20 */
+  line-height: 28px;
+  margin: 0;
+}
+h5, .neo-h5 {
+  font-weight: var(--neo-fw-semibold);
+  font-size: var(--neo-fs-md);    /* 16 */
+  line-height: 24px;
+  margin: 0;
+}
+
+p, .neo-body {
+  font-size: var(--neo-fs-base);
+  line-height: 22px;
+  color: var(--neo-fg-1);
+  margin: 0;
+}
+.neo-secondary { color: var(--neo-fg-2); }
+.neo-tertiary  { color: var(--neo-fg-3); }
+.neo-disabled  { color: var(--neo-fg-4); }
+
+.neo-caption {
+  font-size: var(--neo-fs-xs);    /* 12 */
+  line-height: 20px;
+  color: var(--neo-fg-3);
+}
+
+a, .neo-link {
+  color: var(--neo-fg-link);
+  text-decoration: none;
+}
+a:hover, .neo-link:hover { color: var(--neo-primary-hover); }
+
+code, .neo-code {
+  font-family: var(--neo-font-mono);
+  font-size: 13px;
+  background: var(--neo-gray-3);
+  padding: 1px 6px;
+  border-radius: var(--neo-radius-xs);
+}
